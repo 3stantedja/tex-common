@@ -25,10 +25,10 @@ Fork this repo to your local machine. Then add your changes and push it to your 
 Additional instructions will be added later
 
 ## To-do
-[] add options to disable certain packages if necessary
-[] move command definitions to a separate .sty file
-[] add more detailed documentations here
-    [] finish up dependencies
-    [] add command line examples
-    [] add `.latexmkrc` example
-    [] add package descriptions (could be pulled straight from the packages?)
+- [ ] add options to disable certain packages if necessary
+- [ ] move command definitions to a separate .sty file
+- [ ] add more detailed documentations here
+    - [ ] finish up dependencies
+    - [ ] add command line examples
+    - [ ] add `.latexmkrc` example
+    - [ ] add package descriptions (could be pulled straight from the packages?)
