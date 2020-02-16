@@ -121,7 +121,14 @@
 % Typography-related stuff
 \microtypesetup{
     tracking = true,
-    kerning = true
+    kerning = true,
+    protrusion = true,
+    spacing
+}
+%% microtype throws a warning when `spacing` is specified
+%% adding the following seems to silence it
+\microtypecontext{
+    spacing=nonfrench
 }
 
 \author{Laurence Amadeus Tristan}
