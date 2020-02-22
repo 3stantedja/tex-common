@@ -4,10 +4,10 @@
     Elementary Foundations --- Logic Macros
 }
 \newcommand{\@ttVersionLg}{
-    v0.2
+    v1.0
 }
 \newcommand{\@ttDateLg}{
-    2019/11/14
+    2020/02/21
 }
 \newcommand{\@ttDescriptionLg}{
     This package provides macros available at EF: An Introduction
@@ -23,6 +23,7 @@
 % in 'problems.sty'
 
 \RequirePackage{cancel}
+\RequirePackage{mathrsfs}
 
 \newcommand{\nth}[1][n]{{#1}^{\mathrm{th}}}
 \newcommand{\bbrac}[1]{\bigl(#1\bigr)}
@@ -77,14 +78,16 @@
 \newcommand{\sfuncdef}[3]{\funcdef[\sfuncto]{#1}{#2}{#3}}
 \newcommand{\funcgraphbare}{\Delta}
 \newcommand{\funcgraph}[1]{\funcgraphbare(#1)}
-\newcommand{\relset}[3]{{#1}_{#2 #3}}
+\newcommand{\relset}[3]{#1_{{} #2 #3}}
 \newcommand{\gtset}[2]{\relset{#1}{\gt}{#2}}
 \newcommand{\posset}[1]{\gtset{#1}{0}}
 \newcommand{\geset}[2]{\relset{#1}{\ge}{#2}}
 \newcommand{\nnegset}[1]{\geset{#1}{0}}
 \newcommand{\neqset}[2]{\relset{#1}{\neq}{#2}}
 \newcommand{\nzeroset}[1]{\neqset{#1}{0}}
-\newcommand{\natnumlt}[1]{\relset{\N}{\lt}{#1}}
+\newcommand{\ltset}[2]{\relset{#1}{\lt}{#2}}
+\newcommand{\leset}[2]{\relset{#1}{\le}{#2}}
+\newcommand{\natnumlt}[1]{\ltset{\N}{#1}} 
 \DeclareMathOperator{\id}{id}
 \newcommand{\inclfunc}[2]{\iota_{#1}^{#2}}
 \newcommand{\projfunc}[1]{\rho_{#1}}
@@ -101,8 +104,25 @@
 \DeclareMathOperator{\ncardop}{\#}
 \newcommand{\EngAlphabet}{\{ \mathrm{a}, \, \mathrm{b}, \, \mathrm{c}, \, \dotsc, \, \mathrm{y}, \, \mathrm{z} \}}
 \newcommand{\ShortEngAlphabet}{\{ \mathrm{a}, \, \mathrm{b}, \, \dotsc, \, \mathrm{z} \}}
+\newcommand{\eqclass}[1]{\left[#1\right]}
+\newcommand{\partorder}{\preceq}
+\newcommand{\partorderstrict}{\prec}
+\newcommand{\npartorder}{\npreceq}
 
 \newcommand{\subgraph}{\preceq}
+\newcommand{\subgraphset}[1]{\mathcal{S}(#1)}
+\newcommand{\connectedsubgraphset}[1]{\mathcal{C}(#1)}
+
+\newcommand{\permcomb}[3]{{#1}(#2,#3)}
+\newcommand{\permcombalt}[3]{{#1}^{#2}_{#3}}
+\newcommand{\permcombaltalt}[3]{{\leftsub{#2}{#1}}_{#3}}
+\newcommand{\permutation}[2]{\permcomb{P}{#1}{#2}}
+\newcommand{\permutationalt}[2]{\permcombalt{P}{#1}{#2}}
+\newcommand{\permutationaltalt}[2]{{\permcombaltalt{P}{#1}{#2}}}
+\newcommand{\combination}[2]{\permcomb{C}{#1}{#2}}
+\newcommand{\combinationalt}[2]{\permcombalt{C}{#1}{#2}}
+\newcommand{\combinationaltalt}[2]{{\permcombaltalt{C}{#1}{#2}}}
+\newcommand{\choosefuncformula}[3]{\frac{#1 !}{#2 ! \, #3 !}}
 
 \DeclareMathOperator{\matrixring}{M}
 \newcommand{\uvec}[1]{\mathbf{#1}}

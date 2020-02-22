@@ -16,6 +16,7 @@ This requires a TeX distribution. I do recommend using `latexmk` as a build syst
 
 - `amsmath`
 - `cancel`
+- `mathrsfs`
 - `microtype`
 - (finish this list)
 
