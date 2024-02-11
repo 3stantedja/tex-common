@@ -23,11 +23,30 @@ Now, add any of the packages in your preamble. Options are not available for now
 ## Requirements
 This requires a TeX distribution. I do recommend using `latexmk` as a build system if possible (as I've not tested other build system yet).
 
-- `amsmath`
-- `cancel`
+- `mathtools`
+  - should load `amsmath` as well; I don't quite remember
+- `amssymb`
+- `amsthm`
+- `geometry`
+- `inputenc`
 - `mathrsfs`
 - `microtype`
-- (finish this list)
+- `babel`
+- `biblatex`
+- `hyperref`
+- `booktabs`
+- `graphicx`
+- `wrapfig`
+- `inconsolata` (also known as `zi4`)
+- `lmodern` (also referenced as `lm`)
+- `titling`
+- `fancyhdr`
+- `enumitem`
+- `datetime2`
+- `csquotes`
+- `siunitx
+- `parskip`
+- `array`
 
 Note that I have not tested on other TeX engines, so your mileage might inevitably vary. It might crash and burn, I'm not sure! But do let me know if that's the case so I could look into that!
 
