@@ -1,6 +1,9 @@
 # tex-common
 Common custom packages used in TeX-based repos. Currently they are used in most of my TeX-based documents.
 
+> [!IMPORTANT]
+> The commits in this repo has references to my deadname. As such please respect my wishes and _never_ bring up my deadname.
+
 ## Packages
 ### `problems`
 This contains a baseline setup for me to start writing documents. Basically this aims to shorten the preamble portion of my TeX documents so that I could see its content without a lot of scrolling. As such, the package only contains all the packages that I would've imported as well as some formatting and package settings.
@@ -25,6 +28,8 @@ This requires a TeX distribution. I do recommend using `latexmk` as a build syst
 - `mathrsfs`
 - `microtype`
 - (finish this list)
+
+Note that I have not tested on other TeX engines, so your mileage might inevitably vary. It might crash and burn, I'm not sure! But do let me know if that's the case so I could look into that!
 
 ## Comtributing
 Fork this repo to your local machine. Then add your changes and push it to your repo. After that add a pull request.
