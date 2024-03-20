@@ -11,14 +11,14 @@ This contains a baseline setup for me to start writing documents. Basically this
 It was named as such because (as I would explain a bit later) I was primarily using this for doing my AUMAT 250 problems, and it got tedious copying the preamble every time I wanted to do more write-ups.
 
 ### `lg_jsylvest`
-This contains all macros that were used in an older version of (Elementary Foundations)[https://sites.ualberta.ca/~jsylvest/books/EF/] textbook; during my time in AUMAT 250 I got too lazy to figure out which macros aliases to which sequence of commands in LaTeX as I was copying the questions and equations for my assignments at the time. A bit of sleuthing with Inspect Elements later, I found a complete set of macros that he used for the textbook, so they're reproduced here in full.
+This contains all macros that were used in an older version of [Elementary Foundations](https://sites.ualberta.ca/~jsylvest/books/EF/) textbook; during my time in AUMAT 250 I got too lazy to figure out which macros aliases to which sequence of commands in LaTeX as I was copying the questions and equations for my assignments at the time. A bit of sleuthing with Inspect Elements later, I found a complete set of macros that he used for the textbook, so they're reproduced here in full.
 
 The name of the package was from both one of the (incomplete) prefixes that I saw at the time, and the professor that taught me AUMAT 250 both in Fall 2019 and Fall 2020, Jeremy Sylvestre. If you're reading this, hi! I hope you don't mind the macros being in this package. (also sorry for the trouble i've caused you!)
 
 ## How to use
 Clone this repository as a submodule in your existing LaTeX repo (or as a separate repo nested in your project). Then adjust your `TEXINPUTS` path (in my case via `.latexmkrc`) so that your build system (in my case `latexmk`) will try to find it.
 
-Now, add any of the packages in your preamble. Options are not available for now. Currently the only exposed "interfaces" (for a lack of a better term) is the title, date, and author name.
+Now, add any of the packages in your preamble. Options are not available for now. Currently, the only exposed "interfaces" (for a lack of a better term) is the title, date, and author name.
 
 ## Requirements
 This requires a TeX distribution. I do recommend using `latexmk` as a build system if possible (as I've not tested other build system yet).
@@ -44,13 +44,13 @@ This requires a TeX distribution. I do recommend using `latexmk` as a build syst
 - `enumitem`
 - `datetime2`
 - `csquotes`
-- `siunitx
+- `siunitx`
 - `parskip`
 - `array`
 
-Note that I have not tested on other TeX engines, so your mileage might inevitably vary. It might crash and burn, I'm not sure! But do let me know if that's the case so I could look into that!
+Note that I have not tested on other TeX engines, so your mileage might inevitably vary. It might crash and burn, I'm not sure! But do let me know if that's the case, so I could look into that!
 
-## Comtributing
+## Contributing
 Fork this repo to your local machine. Then add your changes and push it to your repo. After that add a pull request.
 
 Additional instructions will be added later
